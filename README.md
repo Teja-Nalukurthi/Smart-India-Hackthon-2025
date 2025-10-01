@@ -23,8 +23,7 @@ GoLocal is a mobile platform that connects users with the authentic cultural her
 - **Cross-content Search**: Search artisans, food items, and folklore simultaneously
 
 ### 🗺️ **Interactive Maps**
-- **Google Maps Integration**: Full-featured map experience with custom markers
-- **Location-based Content**: 22 authentic Pondicherry-focused places
+- **Google Maps Integration**: Full-featured map experience with custom markers loaded from supabase
 - **Place Type Filtering**: Filter by Artisans (violet), Tourist Spots (green), Local Shops (yellow)
 - **Pin Interactions**: Tap pins for detailed information and actions
 - **Directions Integration**: Direct navigation to Google Maps for directions
@@ -51,16 +50,6 @@ GoLocal is a mobile platform that connects users with the authentic cultural her
 - **Natural Conversations**: Chat interface for questions and guidance
 - **Floating Access**: Available from any screen via floating action button
 
-### 🎨 **Animations & UX**
-- **Lottie Animations**: 
-  - Pottery craftsmanship (Search empty state)
-  - Sewing animation (Favorites empty state)
-  - Thank you animation (Post-signup)
-  - Login/Signup animations
-- **Smooth Transitions**: Gesture-disabled navigation preventing accidental swipes
-- **Loading States**: Skeleton screens and progress indicators
-- **Error Handling**: Graceful error states with retry mechanisms
-
 ## 🛠️ Technologies & Architecture
 
 ### **Frontend Framework**
@@ -82,7 +71,6 @@ GoLocal is a mobile platform that connects users with the authentic cultural her
   - Real-time subscriptions
   - Authentication & user management
   - File storage for images
-- **Mock Data Integration**: Comprehensive fallback system for development
 
 ### **Maps & Location**
 - **Google Maps Flutter**: Interactive map widget
@@ -91,7 +79,7 @@ GoLocal is a mobile platform that connects users with the authentic cultural her
 - **Geocoding**: Address to coordinates conversion
 
 ### **UI/UX Libraries**
-- **Lottie**: Vector animations (pottery, sewing, thank you)
+- **Lottie**: Vector animations 
 - **Cached Network Image**: Optimized image loading and caching
 - **Google Fonts**: Custom typography
 - **Flutter SVG**: Vector graphics support
@@ -99,7 +87,6 @@ GoLocal is a mobile platform that connects users with the authentic cultural her
 ### **Development & Security**
 - **Flutter Dotenv**: Environment variable management
 - **Secure API Key Storage**: Environment-based configuration
-- **Git Security**: .env files excluded from version control
 
 ### **External Integrations**
 - **WhatsApp**: Direct artisan contact via URL schemes
@@ -139,69 +126,19 @@ lib/
 5. **Location Services**: Real-time GPS with permission handling
 6. **External Actions**: Deep links to WhatsApp, Phone, Maps
 
-## 🚀 Getting Started
-
-### **Prerequisites**
-- Flutter SDK 3.9.0 or higher
-- Android Studio / VS Code
-- Git for version control
-
-### **Installation**
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Teja-Nalukurthi/Smart-India-Hackthon-2025.git
-   cd Smart-India-Hackthon-2025
-   ```
-
-2. **Environment Setup**
-   ```bash
-   cp .env.example .env
-   # Add your API keys to .env file
-   ```
-
-3. **Install Dependencies**
-   ```bash
-   flutter pub get
-   ```
-
-4. **Run the Application**
-   ```bash
-   flutter run
-   ```
-
-### **Required API Keys**
-- **Supabase**: Project URL and Anon Key
-- **Google Maps**: API key with Maps SDK and Places API enabled
-
-## 🌍 Mock Data & Content
-
-### **Pondicherry-Focused Content**
-- **6 Artisans**: Pottery, Handloom, Furniture, Brass Works, Jewelry, Art
-- **8 Tourist Spots**: Ashrams, Beaches, Museums, Churches, Parks
-- **8 Local Food Shops**: Sweet shops, Bakeries, Spice markets, Organic stores
 
 ### **Content Categories**
-- **Artisan Categories**: Pottery, Weaving, Wood Carving, Jewelry, Metal Work, Paintings
-- **Food Categories**: Traditional, Sweets, Beverages, Local Specialties
-- **Folklore Types**: Traditions, Legends, Stories, Festivals
+- **Artisan Categories**: Pottery, Weaving, Wood Carving, Jewelry, Metal Work, Paintings etc.,
+- **Food Categories**: Traditional, Sweets, Beverages, Local Specialties etc.,
+- **Folklore Types**: Traditions, Legends, Stories, Festivals etc.,
 
 ## 🔐 Security Features
 
-- **Environment Variables**: All sensitive data in .env files
 - **API Key Management**: Secure storage and loading
 - **Authentication Flow**: Email verification required
 - **Row Level Security**: Database-level access control
 - **Input Validation**: Form validation and sanitization
 - **Error Handling**: Graceful error states and recovery
-
-## 📊 Performance Optimizations
-
-- **Image Caching**: Cached network images for faster loading
-- **Lazy Loading**: Content loaded on demand
-- **State Persistence**: User session and preferences maintained
-- **Memory Management**: Efficient widget lifecycle handling
-- **Animation Performance**: Optimized Lottie animations
 
 ## 🎯 Key User Journeys
 
@@ -219,27 +156,4 @@ lib/
 - **Modern UI**: Material Design 3 with custom theming
 - **Accessibility**: Screen reader support and semantic labels
 
-## 📝 Documentation
-
-- **USER_WORKFLOW_DIAGRAM.md**: Complete user journey visualization
-- **.env.example**: Environment variable template
-- **Database Schema**: Comprehensive Supabase table structure
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Follow the coding standards
-5. Submit a pull request
-
-## 📄 License
-
-This project is developed for Smart India Hackathon 2025.
-
-## 🔗 Resources
-
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Supabase Documentation](https://supabase.com/docs)
-- [Google Maps Flutter](https://pub.dev/packages/google_maps_flutter)
-- [Provider State Management](https://pub.dev/packages/provider)
+This project is developed for Smart India Hackathon 2025 by Team Kratos
